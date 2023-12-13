@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+<!-- definição de caracteres-->
+    <meta charset="UTF-8">
+
+    <title>Bárbara Mór da Mata</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <header class="cabecalho">    
+        <nav class="cabecalho-menu">
+            
+            <!-- link para a seção 2-->
+            <a class="menu-item" href="#sobre">Sobre mim</a>
+            <!-- <a class="menu-item" href="#revisao">Revisão de texto</a> -->
+            <a class="menu-item" href="#oficinas">Oficinas e cursos</a>
+            <a class="menu-item" href="#contato">Contato</a>
+
+        </nav>    
+    </header>
+
+    <div class="separador"></div>
+
+    <main class="conteudo">
+        <!-- seção 1: foto e apresentação-->
+        <section class="principal-box">        
+            <div id="imagem-capa">        
+                <p class="principal-texto">Bárbara Mór da Mata </p> 
+                <p class="secundario-texto"> Revisora <br> Graduada em Letras - Língua e Literatura Portuguesa pela Universidade Federal do Rio Grande do Sul (UFRGS)</p>      
+            </div>        
+        </section>
+
+        <div class="separador"></div>
+        
+        <!-- seção 1: sobre-->
+        <section class="secundario-box" id="sobre">
+            <div>
+            <p class="terciario-texto">Sobre mim</p>
+            <br>
+            </div> <!--título-->
+            
+            <div>
+            <p class="tresemeio-texto"> "Quando a educação não é libertadora, o sonho do oprimido é se tornar o opressor" (Paulo Freire)</p>
+            <br>
+            </div> <!-- frase-->
+
+            <div class="texto-sobre">
+            <p class="quaternario-texto">
+            Tenho 27 anos e sou formada em Letras pela Universidade Federal do Rio Grande do Sul (UFRGS). Atualmente, estudo Sistemas para Internet (UNISINOS). Acredito em uma educação autônoma e que desenvolva a criticidade por meio dos estudos culturais, das artes e também da tecnologia da informação. 
+                <br>
+            <br> Atualmente, além de estagiar como desenvolvedora Salesforce, realizo trabalhos de revisão, normalização ABNT e diagramação de textos, geralmente para o meio acadêmico. Além disso, como uma boa geminiana, que gosta da dualidade e de ser multitarefas, gosto de pensar e desenvolver oficinas que envolvam literatura, artes visuais e/ou programação. 
+                <br>               
+            <br> Nas horas vagas, é possível que você me encontre ouvindo K-Pop, assistindo K-dramas, pintando com giz pastel oleoso ou estudando coreano. Ah, também gosto de ler sobre skincare.</p> 
+                <br> 
+            </div> <!-- texto do sobre-->
+        </section>
+
+        <div class="separador"></div>
+
+        <!-- seção 3: revisões-->
+        <!-- 
+        <section class="secundario-box" id="revisao">
+            <p class="terciario-texto">Trabalhos de revisão de texto</p> 
+            <p class="quaternario-texto"> Revisões publicadas</p> 
+            <br> 
+        </section>
+
+        <div class="separador"></div>
+        -->
+        
+        <!-- seção 4: oficinas e cursos-->
+        <section class="secundario-box" id="oficinas">
+            <p class="terciario-texto">Oficinas e cursos</p> 
+            <br> 
+            
+            <div class="grid-container" id="grid-container">
+                <div class="grid-item overlay" onclick="openModal('Image 1', 'Descrição da imagem', './images/bienal-capa.jpg')">
+                    <img src="./images/bienal-capa.jpg">
+                    <div class="text"> MEDIADORA CULTURAL NA 13ª BIENAL DE ARTES VISUAIS DO MERCOSUL (2022) </div>
+                </div>
+            </div> <!--div container do grid-->
+
+            <div class="modal" id="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+
+                <div id="modal-content">
+                    <!-- conteúdo do modal -->
+                </div> <!--final do conteúdo do modal-->
+            </div> <!-- fim do modal-->
+
+        </section>
+        
+                <div class="separador"></div>
+
+        <!-- seção 5: parte de contato-->
+        <section class="secundario-box" id="contato">
+            <p class="terciario-texto">Contate-me</p> 
+            <p class="quaternario-texto">barbara.mor@outlook.com <br> barbaramormata@gmail.com</p>
+            <br> 
+        </section>
+
+</main>
+
+<footer>
+
+    <p>Desenvolvido por @Mormata</p>
+    
+</footer>

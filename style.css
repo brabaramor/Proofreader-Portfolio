@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+
+margin:0;
+padding:0;
+box-sizing: border-box;
+text-decoration: none;
+
+}
+
+.separador {
+    margin-left: 5%;
+    margin-right: 5%;
+    border-top: 1px solid #ccc; 
+}
+
+body{
+
+    font-family: 'Oswald', sans-serif;    
+}
+
+.cabecalho{
+
+    display: flex;    
+    align-items: center;    
+    justify-content: space-around;    
+    padding: 15px;
+    background: #93816A;
+}
+    
+    
+.cabecalho-menu{
+    
+    display: flex;    
+    gap: 30px;
+    
+}
+    
+.menu-item{
+    
+    color: #f8f4ee;    
+    font-size: 20px;
+    
+}
+
+.principal-box{
+    height: 500px;    
+    display: flex;
+    
+}
+    
+#imagem-capa{
+    
+    background-image: url("https://i.postimg.cc/w9GQKztv/FOT5-211555.jpg");   
+    background-repeat: no-repeat;    
+    background-size: cover;    
+    width: 50%;
+    align-content: flex-end;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+    
+.principal-texto{
+    
+    color:#473C38;    
+    font-size: 50px;
+    font-weight:bold;    
+    margin-top: 0%;    
+    width: 80%;    
+    padding: 30px;    
+    height: 100px;    
+    margin-left: 100%;
+    
+}
+
+.secundario-texto{
+    
+    color:#735E59;    
+    font-size: 25px;
+    margin-top: 0%;    
+    width: 80%;    
+    padding: 40px;    
+    height: 80px;    
+    margin-left: 100%;
+    
+}
+ 
+.terciario-texto{
+    
+    color:#473C38;    
+    font-size: 50px;
+    font-weight:bold;    
+    
+}
+
+.tresemeio-texto{
+    
+    color:#473C38;    
+    font-size: 30px;
+    font-weight:bold;    
+    
+}
+
+.quaternario-texto{
+    
+    color:#735E59;    
+    font-size: 20px;    
+}
+
+.texto-sobre{
+    padding: 10%;
+    padding-top: 0%;
+    padding-bottom: 5%;
+
+}
+
+.secundario-box{
+    
+    margin-top: 5%;    
+    text-align: -webkit-center;
+    
+}   
+
+/* estilização do grid*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 5%;
+  }
+  
+  .grid-item {
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .grid-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+  }
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: black;
+  }
+   
+/* estilização do footer*/
+footer{
+
+    padding: 50px 0 20px 0;    
+    bottom: 0;    
+    text-align: center;
+    
+}
+
+ /* Estilo para a sobreposição */
+ .overlay {
+  position: relative;
+  display: inline-block;
+}
+
+/* Estilo para a imagem */
+.overlay img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Estilo para o texto de sobreposição */
+.overlay .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo transparente */
+  color: #fff;
+  padding: 10px;
+  opacity: 0; /* Inicialmente invisível */
+  transition: opacity 0.3s ease;
+}
+
+/* Mostra o texto quando passa o mouse sobre a imagem */
+.overlay:hover .text {
+  opacity: 10;
+}
