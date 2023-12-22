@@ -155,6 +155,7 @@ body{
     width: 100%;
     height: 100%;
     background-color: #fff;
+    padding: 3%;
   }
   
   .modal-content {
@@ -165,6 +166,10 @@ body{
     background-color: #fff;
     padding: 20px;
     text-align: center;
+  }
+
+  .titulo-modal {
+    padding: 2%;
   }
   
   .close {
